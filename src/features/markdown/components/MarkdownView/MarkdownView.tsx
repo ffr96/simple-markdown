@@ -6,15 +6,13 @@ import './MarkdownView.css';
 export const MarkdownView = ({ html }: { html: string }) => {
   return (
     <CenterBox className='bg-slate-300 rounded-md shadow-lg shadow-slate-400 mt-20 min-h-full w-full'>
-      {html && (
-        <div
-          id='markdown-view'
-          className='p-6 w-full break-words'
-          dangerouslySetInnerHTML={{
-            __html: marked.parse(html, { breaks: true }),
-          }}
-        />
-      )}
+      <div
+        id='markdown-view'
+        className='p-6 w-full break-words'
+        dangerouslySetInnerHTML={{
+          __html: marked.parse(html, { breaks: true }),
+        }}
+      />
     </CenterBox>
   );
 };

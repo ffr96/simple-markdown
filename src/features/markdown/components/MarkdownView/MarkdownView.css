@@ -1,5 +1,11 @@
 #markdown-view {
-  @apply break-all max-w-[40vw];
+  @apply max-w-[40vw];
+}
+
+@media screen and (max-width: 768px) {
+  #markdown-view {
+    @apply max-w-[80vw];
+  }
 }
 #markdown-view h1,
 #markdown-view h2,
@@ -42,4 +48,16 @@
 
 #markdown-view code {
   @apply bg-slate-100 text-black;
+}
+
+#markdown-view ul {
+  @apply text-slate-900 list-disc;
+}
+
+#markdown-view ol {
+  @apply text-slate-900 list-decimal;
+}
+
+#markdown-view img {
+  @apply py-4;
 }

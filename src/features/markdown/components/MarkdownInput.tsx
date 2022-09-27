@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { TextArea } from '../../../components/Elements/TextArea';
 import { MarkdownView } from './MarkdownView/MarkdownView';
 import { HtmlView } from './HtmlView/HtmlView';
@@ -6,8 +6,6 @@ import CenterBox from '../../../components/Layout/CenterBox';
 
 export const MarkdownInput = () => {
   const [input, setInput] = useState('');
-
-  useEffect(() => {});
 
   return (
     <>
@@ -27,10 +25,12 @@ export const MarkdownInput = () => {
           onChange={(e) => setInput(e.target.value)}
         />
       </CenterBox>
-      <div className='flex flex-col md:flex-row'>
-        <MarkdownView html={input} />
-        <HtmlView html={input} />
-      </div>
+      {input && (
+        <div className='flex flex-col md:flex-row'>
+          <MarkdownView html={input} />
+          <HtmlView html={input} />
+        </div>
+      )}
     </>
   );
 };
