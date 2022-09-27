@@ -1,4 +1,4 @@
-import { MarkdownInput } from '../features/markdown/components/MarkdownInput';
+import { Markdown } from '../features/markdown/';
 
 const Intro = () => {
   return (
@@ -10,7 +10,7 @@ const Intro = () => {
         Simply write on the Markdown Input Area and see how the Markdown View
         updates{' '}
       </p>
-      <MarkdownInput />
+      <Markdown />
     </div>
   );
 };
