@@ -1,63 +1,67 @@
-#markdown-view {
+#preview {
   @apply max-w-[40vw];
 }
 
 @media screen and (max-width: 768px) {
-  #markdown-view {
+  #preview {
     @apply max-w-[80vw];
   }
 }
-#markdown-view h1,
-#markdown-view h2,
-#markdown-view h3 {
+#preview h1,
+#preview h2,
+#preview h3 {
   @apply border-b-2 mb-6 border-slate-700 text-slate-800 font-sans;
 }
 
-#markdown-view h1 {
+#preview h1 {
   @apply text-4xl;
 }
 
-#markdown-view h2 {
+#preview h2 {
   @apply text-3xl;
 }
 
-#markdown-view h3 {
+#preview h3 {
   @apply text-2xl;
 }
 
-#markdown-view p {
+#preview p {
   @apply text-lg font-sans text-slate-800;
 }
 
-#markdown-view blockquote {
+#preview blockquote {
   @apply pl-4 py-1 bg-slate-400 text-slate-700 border-slate-900;
 }
 
-#markdown-view blockquote > * {
+#preview blockquote > * {
   @apply pl-4 pb-0 border-l-2 border-slate-900;
 }
 
-#markdown-view table,
-#markdown-view td,
-#markdown-view th {
+#preview table,
+#preview td,
+#preview th {
   @apply border p-2 border-slate-700 m-2 text-black;
 }
-#markdown-view pre {
+#preview pre {
   @apply bg-slate-100 text-black whitespace-pre-wrap p-4;
 }
 
-#markdown-view code {
+#preview code {
   @apply bg-slate-100 text-black;
 }
 
-#markdown-view ul {
+#preview ul {
   @apply text-slate-900 list-disc;
 }
 
-#markdown-view ol {
+#preview ul li {
+  @apply pl-4;
+}
+
+#preview ol {
   @apply text-slate-900 list-decimal;
 }
 
-#markdown-view img {
+#preview img {
   @apply py-4;
 }
