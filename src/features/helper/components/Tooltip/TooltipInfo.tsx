@@ -1,7 +1,7 @@
 export const TooltipInfo = () => {
   return (
     <div>
-      <ul>
+      <ul className='overflow-hidden'>
         <li className='text-left px-2 font-mono border-b-2 border-blue-400'>
           <b>Cheatsheet</b>
         </li>
@@ -26,8 +26,8 @@ export const TooltipInfo = () => {
         <li className='w-full whitespace-nowrap bg-white'>
           | and -- can create tables
         </li>
-        <li>
-          ``a`` is for <code className='bg-white'>code</code>
+        <li className='inline-block'>
+          ``a`` is for <span className='bg-white'>code</span>
         </li>
       </ul>
     </div>

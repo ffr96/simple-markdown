@@ -9,7 +9,7 @@ export const Tooltip = () => {
     if (showingHelper) {
       setTimeout(() => {
         setShowText(true);
-      }, 200);
+      }, 280);
     }
   }, [showingHelper]);
 

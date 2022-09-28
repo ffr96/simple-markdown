@@ -1,14 +1,15 @@
 import MainView from './components/Layout/MainView';
-import { useState } from 'react';
 import Intro from './View/Intro';
 import CenterBox from './components/Layout/CenterBox';
+import Footer from './View/Footer';
 
 function App() {
   return (
-    <MainView className=''>
+    <MainView>
       <CenterBox>
         <Intro />
       </CenterBox>
+      <Footer />
     </MainView>
   );
 }
